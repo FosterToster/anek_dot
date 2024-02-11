@@ -99,7 +99,7 @@ class Attack(IAction):
     def execute_by(self, actor: IActor):
         print(actor, self.name, self.who, end='')
         if actor.equipped:
-            print('с помощью', actor.equipped)
+            print(' с помощью', actor.equipped)
         else:
             print()
 
