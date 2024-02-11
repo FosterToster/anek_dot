@@ -84,6 +84,7 @@ class Equip(IAction):
         return 'экипирует'
     
     def execute_by(self, actor: IActor):
+        actor.equipped = self.what
         print(actor, self.name, 'ничего' if self.what is None else self.what)
 
 
